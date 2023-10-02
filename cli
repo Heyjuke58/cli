@@ -8,7 +8,7 @@ CURRENT_DIRECTORY="$(pwd)"
 if [ -e "$PYTHON_SCRIPT" ]; then
     # Execute the Python script
     echo Setting up CLI boilerplate in $CURRENT_DIRECTORY
-    python "$PYTHON_SCRIPT" "-d=$CURRENT_DIRECTORY"
+    python "$PYTHON_SCRIPT" "-d=$CURRENT_DIRECTORY" "-h=$HOME"
 else
     echo "Error: Python script not found at '$PYTHON_SCRIPT'"
     exit 1
