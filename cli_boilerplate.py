@@ -25,4 +25,4 @@ def main(dir: str, home_dir: str):
 
 if __name__ == "__main__":
     args = parse_args()
-    main(args.dir)
+    main(args.dir, args.home_dir)
