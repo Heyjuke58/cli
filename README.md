@@ -1,6 +1,6 @@
 # Boilerplate CLI
 
-Automation script that adds python boilerplate code for writing a comman line interface (cli).
+Automation script that adds python boilerplate code for writing a command line interface (cli).
 The files ``argument_parser.py`` and ``main.py`` will be added to a target directory if they do not exist yet. Otherwise the script will fail.
 
 ## How to setup
