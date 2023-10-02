@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Specify the path to your Python script
+PYTHON_SCRIPT="./cli_boilerplate.py"
+CURRENT_DIRECTORY="$(pwd)"
+
+# Check if the Python script exists
+if [ -e "$PYTHON_SCRIPT" ]; then
+    # Execute the Python script
+    echo Setting up CLI boilerplate in $CURRENT_DIRECTORY
+    python "$PYTHON_SCRIPT" "-d=$CURRENT_DIRECTORY"
+else
+    echo "Error: Python script not found at '$PYTHON_SCRIPT'"
+    exit 1
+fi
