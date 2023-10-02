@@ -6,7 +6,7 @@ from pathlib import Path
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", dest="dir", type=str, help="Directory where to paste the boilerplate code.")
-    parser.add_argument("-h", dest="home_dir", type=str, help="Home directory where to paste the boilerplate code.")
+    parser.add_argument("-hd", dest="home_dir", type=str, help="Home directory.")
 
     args = parser.parse_args()
 
